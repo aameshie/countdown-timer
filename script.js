@@ -1,3 +1,4 @@
+// This function shows the current date and time
 const currentDate = new Date();
 console.log(currentDate); 
 
