@@ -12,6 +12,8 @@ console.log(targetDate);
 // Subtracts current time from target date to show remainder
 const difference = targetDate - currentDate; 
 console.log(difference);
+
+
 // This function will calculate the time remaining and update the HTML elements accordingly
 function updateCountdown() {
   const currentTime = new Date();
@@ -27,4 +29,14 @@ function updateCountdown() {
   document.getElementById("minutes").innerText = minutes;
   document.getElementById("seconds").innerText = seconds;
 
+}
+
+
+// This function will make the countdown timer update in real-time 
+  const interval = setInterval(updateCountdown, 1000); // setInterval calls a function repeatedly with a fixed time delay
+
+// Conditional that will display text when the countdown reaches 0
+if (difference < 0) {
+ clearInterval(interval);
+  document.getElementById("timer").innerText = "Happy Birthday William!!";
 }
