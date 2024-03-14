@@ -9,7 +9,7 @@ const targetDate = new Date('2024-03-14T23:59:59');
 console.log(targetDate);
 
 
-// Subtracts current time from target date to show remainder
+// Subtracts current time from target date to show how much time is left
 const difference = targetDate - currentDate; 
 console.log(difference);
 
