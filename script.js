@@ -5,7 +5,7 @@ console.log(currentDate);
 
 
 // The target date for countdown
-const targetDate = new Date('2024-03-14T23:59:59');
+const targetDate = new Date('2024-03-18:59:59');
 console.log(targetDate);
 
 
